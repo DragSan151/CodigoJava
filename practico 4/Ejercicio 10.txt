@@ -1,0 +1,36 @@
+package hola;
+
+import java.util.Scanner;
+
+
+public class practic {
+    public static void main(String[] args) {
+        Scanner lector = new Scanner (System.in);
+        int a,i,aux,b;
+        int arreglo[]=new int[10];
+        System.out.println("Ingrese 10 para comience el arreglo: ");
+        a= lector.nextInt();
+        for(i=0;i<a;i++){
+            System.out.print("X["+(i+1)+"]= ");
+            arreglo[i]=lector.nextInt();
+        }
+        // intercambiar
+        System.out.println("Arreglo sin valores intercambiados ");
+        for(int j=0;j<a;j++){
+            System.out.print(arreglo[j]+", ");
+        }
+       
+        b=a;
+        for(i=0;i<=b/2;i++){
+            aux=arreglo[i];
+            arreglo[i]=arreglo[b-1];
+            arreglo[b-1]=aux;
+            b--;
+        }
+       
+        System.out.println("\nArreglo con sus valorres intercambiados ");
+       for(i=0;i<a;i++){
+          System.out.print(arreglo[i]+", ");
+       }
+    }
+}

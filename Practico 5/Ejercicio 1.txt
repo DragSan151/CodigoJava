@@ -1,0 +1,34 @@
+package hola;
+
+import java.util.Scanner;
+
+
+public class practic {
+    public static void main(String[] args) {
+        Scanner lector = new Scanner (System.in);
+        
+        
+        
+        //Ejercicio 1
+        //Escribir un método que tenga un argumento de tipo entero y que
+        //devuelva un carácter. El carácter a devolver será: P si el número pasado es
+        //positivo y la letra N si es cero o negativo. Construir un main que permita
+        //ingresar el número que se pasa al método
+        
+        int numero=Metodos.MetodosIngresar.ingresoINT("ingrese un numero: ");
+        
+        
+        System.out.println(" Resultado: " + evaluar(numero));
+       
+    }
+    
+    public static String evaluar(int numero) {
+    	if (numero>0) {
+    		return "P";
+    		
+    	}
+    	return "N";
+    }
+    
+    
+}

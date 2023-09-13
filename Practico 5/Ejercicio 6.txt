@@ -1,0 +1,36 @@
+package hola;
+
+import java.util.*;
+ 
+public class Practico {
+	public static Scanner entrada=new Scanner(System.in);
+ 
+	public static void main(String[] args) {
+		
+		 String cadena = "";
+		 
+	      
+	      if (args.length == 1) {
+		  cadena = args[0];
+	      }
+	      
+	      if (cadena.equals("")) {
+	          Scanner lecturaTeclado = new Scanner(System.in);
+	          System.out.print("Introduzca una cadena de texto y pulse INTRO: ");
+	          cadena = lecturaTeclado.nextLine();
+	      }
+	      if (!cadena.isEmpty()) {
+	          System.out.print("La cadena \"" + cadena + "\" invertida es: " + InvertirCadena(cadena));
+	      } else {
+	          System.out.println("No ha introducido una cadena de texto.");
+	      }
+	    }
+	 
+	   
+	    public static String InvertirCadena(String cadena) {
+	        String cadenaInvertida = "";
+	        for (int x = cadena.length() - 1; x >= 0; x--)
+	            cadenaInvertida = cadenaInvertida + cadena.charAt(x);
+	        return cadenaInvertida;
+	    }
+	}

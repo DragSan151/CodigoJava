@@ -1,0 +1,33 @@
+Ejercicio 2
+
+
+package hola;
+import java.util.Scanner;
+
+public class practic {
+
+	public static void main(String[] args) {
+		
+		int suma = 0;
+		int [] arreglo = new int[10];
+		Scanner ent = new Scanner(System.in);
+		
+		for(int i = 0; i < 10; i++) {
+            
+            System.out.println("Ingresa el "+i+" numero:");
+            arreglo[i] = ent.nextInt();
+            suma += arreglo[i];
+            
+      }
+		
+		
+		 for(int i = 0; i < 10; i++) {
+             
+             System.out.println("En la posicion "+(i+1)+" se guardo: "+arreglo[i]);
+                 }
+		
+		 System.out.println("La suma total es: "+suma);
+		 
+	}
+
+}

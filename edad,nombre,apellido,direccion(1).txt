@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class proyect {
+	
+
+	public static void main (String args []) {
+		
+	
+
+	int edad;
+	String Nombre,apellido,direccion;
+	Scanner lectura= new Scanner (System.in);
+	
+	System.out.println("ingrese su nombre");
+	Nombre=lectura.next();
+	System.out.println("ingrese su apellido");
+	apellido=lectura.next();
+	System.out.println("ingrese su edad");
+	edad=lectura.nextInt();
+	System.out.println("ingrese su direccion");
+	direccion=lectura.next();
+   
+    System.out.println(" su nombre es "+ Nombre +" su apellido es "+ apellido +" su edad es "+ edad +" y su direccion es "+ direccion);
+	
+}
+	
+}

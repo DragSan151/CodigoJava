@@ -1,0 +1,66 @@
+package hola;
+ import java.util.*;
+public class Practico {
+	public static void main(String[] args) {
+		
+		
+		int Caracter;
+		Scanner lectura=new Scanner(System.in);
+		Caracter = Metodos.MetodosIngresar.ingresoINT("Ingrese el Caracter: ");
+		
+		
+		switch(Caracter) {
+		case 0:
+		case 1:
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:	
+		case 10:
+			System.out.println("Es numero");
+			break;
+			
+		case 'a': 
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+			System.out.println(" Es una vocal ");
+			break;
+		case 'b':
+		case 'c':
+		case 'd':
+		case 'f':
+		case 'g':
+		case 'h':	
+		case 'j':
+		case 'k':
+		case 'l':
+		case 'm':
+		case 'n':
+		case 'ñ':
+		case 'p':
+		case 'q':
+		case 'r':
+		case 's':
+		case 't':
+		case 'v':
+		case 'w':
+		case 'x':
+		case 'y':
+			System.out.println(" Es una consonante");
+			break;
+		default:
+			System.out.println("Es un signo");
+			break;
+			
+		}
+		
+		
+
+	}
+}

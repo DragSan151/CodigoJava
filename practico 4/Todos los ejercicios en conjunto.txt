@@ -1,0 +1,506 @@
+Ejercicio 1
+
+import javax.swing.*;
+
+import javax.swing.JOptionPane;
+
+public class Practico4 {
+
+	
+
+	public static void main (String args []) {
+		
+		String [] numeros=new String[5];
+		
+	for (int i=0;i<5;i++) { 
+		
+		numeros[i]=JOptionPane.showInputDialog("introduce numero");
+		
+	}
+		 for(String elemento:numeros) {
+			 System.out.println(" numero: " + elemento);
+		 }
+		 
+	 }
+	
+	 }
+
+
+
+
+Ejercicio 2
+
+package hola;
+import java.util.Scanner;
+
+public class practic {
+
+	public static void main(String[] args) {
+		
+		int suma = 0;
+		int [] arreglo = new int[10];
+		Scanner ent = new Scanner(System.in);
+		
+		for(int i = 0; i < 10; i++) {
+            
+            System.out.println("Ingresa el "+i+" numero:");
+            arreglo[i] = ent.nextInt();
+            suma += arreglo[i];
+            
+      }
+		
+		
+		 for(int i = 0; i < 10; i++) {
+             
+             System.out.println("En la posicion "+(i+1)+" se guardo: "+arreglo[i]);
+                 }
+		
+		 System.out.println("La suma total es: "+suma);
+		 
+	}
+
+}
+
+
+
+
+Ejercicio 3
+
+package hola;
+
+import java.util.Scanner;
+public class practic {
+    public static void main(String[]args){
+        Scanner teclado=new Scanner(System.in);
+        boolean elNumeroEsta = false;
+
+        int num[]=new int[1];
+        int x;
+        for(x=0;x<num.length;x++){
+            System.out.print("ingrese un numero: ");
+            num[x]=teclado.nextInt();
+        }
+        
+
+        System.out.print("buscar numero: ");
+        int numero;
+        numero=teclado.nextInt();
+
+        for(x=0;x<num.length;x++){
+            if (numero == num[x]) {
+                System.out.println("El numero esta en el indice "+x+", en la posicion "+(x+1));
+                elNumeroEsta = true;
+            }
+        }
+
+        if(elNumeroEsta ==false) {
+            System.out.println("El numero no esta");
+        }
+    }
+}
+
+
+Ejercicio 4
+
+
+package hola;
+
+import java.util.Scanner;
+
+
+public class practic {
+    public static void main(String[] args) {
+        Scanner lector = new Scanner (System.in);
+        
+        int arreglo []= {1,78,46,52,13,2,44,9,4,13};
+        
+        
+        System.out.println("***********************************");
+        for (int i = 0; i < arreglo.length; i++) {
+			System.out.println(arreglo[i]);
+		}
+        
+        for(int i=0;i<arreglo.length;i++) {
+        	
+        	arreglo[i]=arreglo[i]*i;
+        	System.out.println(" numeros Productos: " +arreglo[i]+ " * " +i);
+        }
+        
+        System.out.println("************************************");
+        for (int i = 0; i < arreglo.length; i++) {
+			System.out.println(arreglo[i]);
+			
+		}
+       
+    }
+}
+
+
+
+
+Ejercicio 5
+
+package hola;
+
+import java.util.Scanner;
+ 
+
+public class practic {
+ 
+    public static void main(String[] args) {
+       
+        Scanner teclado = new Scanner(System.in);
+       
+        System.out.print("Por favor ingrese el tamaño del array: ");
+        int n = teclado.nextInt();
+        int array [] = new int [n];
+       
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("Ingrese dato "+(i+1)+": ");
+            array [i] = teclado.nextInt();
+        }
+       
+        int mayor, menor;
+        mayor = menor = array [0];
+       
+        for (int i = 0; i < array.length; i++) {
+            if(array [i] > mayor) {
+                mayor = array[i];
+            }
+            if(array[i]<menor) {
+                menor = array[i];
+            }
+        }
+        System.out.println("El mayor valor es: "+mayor);
+        System.out.println("El menor valor es: "+menor);
+    }
+}
+
+
+
+
+
+Ejercicio 6
+
+package hola;
+import java.util.Scanner;
+
+public class practic {
+
+	public static void main(String[] args) {
+		
+		Scanner ent = new Scanner(System.in);
+		
+		int arreglo[]=new int[15];
+		int conteo_pares=0,conteo_impares=0;
+		
+		
+		System.out.println(" llenar el arreglo ");
+		for (int i=0;i<15;i++) {
+			System.out.println((i+1) + " digite un numero: ");
+			arreglo[i]= ent.nextInt();
+			
+			
+			if(arreglo[i]%2==0) {
+				conteo_pares++;
+				
+			}
+			else {
+				
+				
+			}
+		}
+			
+		int par[]=new int [conteo_pares];
+		int impar[]=new int [conteo_impares];
+		
+		conteo_pares=0;
+	    conteo_impares = 0;
+		
+		
+		
+		for(int i=0;i<15;i++) {
+			if(arreglo[i]%2==0) {
+				par[conteo_pares]=arreglo[i];
+				conteo_pares++;
+				
+			}else {
+				impar[conteo_impares]=arreglo[i];
+				conteo_impares++;
+			}
+		}
+		
+		
+		System.out.println("\nArreglo pares: ");
+		 for(int i=0;i<conteo_pares;i++) {
+			 System.out.println(par[i]+ " -");
+		 }
+		 System.out.println("");
+		 
+		 System.out.println("\nArreglo impares: ");
+		 for(int i=0;i<conteo_impares;i++) {
+			 System.out.println(impar[i]+" - ");
+			 
+		 }
+		 
+		 System.out.println("");
+	}
+
+}
+
+
+
+
+Ejercicio 7
+
+package hola;
+
+
+import java.util.Scanner;
+
+
+public class practic {
+
+   
+    public static void main(String[] args) {
+
+       
+        int nn;
+
+       
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Introduzcaitud del array: ");
+       
+        nn = sc.nextInt();
+
+        
+        int ArrayN[] = new int[nn];
+
+       
+        for (int i = 0; i < ArrayN.length; i++) {
+            System.out.println("Introduzcaro para el elemento " + (i + 1) + ": ");
+            ArrayN[i] = sc.nextInt();
+        }
+       
+        System.out.println("      -SIN ORDENAR-");
+       
+        mostrarN(ArrayN);
+        
+        System.out.println("¿ordenar los números? S/N");
+        Scanner sc2 = new Scanner(System.in);
+        
+        String res = sc2.nextLine();
+       
+        if (res.equalsIgnoreCase("S")) {
+           
+            System.out.println("       -ORDENADO-   ");
+            
+            ordenaBurbuja(ArrayN);
+        }
+
+    }
+    
+    
+    static void ordenaBurbuja(int ArrayN[]) {
+        
+        for (int i = 0; i < ArrayN.length - 1; i++) {
+            
+            for (int j = 0; j < ArrayN.length - 1; j++) { if (ArrayN[j] > ArrayN[j + 1]) {
+                    
+                    int temp = ArrayN[j + 1];
+                   
+                    ArrayN[j + 1] = ArrayN[j];
+                    ArrayN[j] = temp;
+                   
+                }
+            }
+        }
+       
+        mostrarN(ArrayN);
+    }
+    
+   
+    static void mostrarN(int ArrayN[]) {
+        System.out.println("|-----------------------|");
+        
+        for (int i = 0; i < ArrayN.length; i++) { System.out.print(" Elemento " + (i + 1) + " -----> " + ArrayN[i] + "\n");
+        }
+        System.out.println("|-----------------------|");
+    }
+
+}
+
+
+
+
+Ejercicio 8
+
+package hola;
+
+import java.util.*;
+
+import javax.swing.JOptionPane;
+ 
+public class practic {
+ 
+   
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+ 
+        String []sueldo=new String[1];
+        
+    	int billetes_de_2000, billetes_de_1000, billetes_de_500, billetes_de_200, billetes_de_100;
+        int billetes_de_50, billetes_de_20,  monedas_de_10, monedas_de_5,monedas_de_2,monedas_de_1;
+        int sueldo1 = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el sueldo "));
+        monedas_de_1=sueldo1;
+        billetes_de_2000=(monedas_de_1-monedas_de_1%2000)/2000;
+        monedas_de_1=monedas_de_1%2000;
+        billetes_de_1000=(monedas_de_1-monedas_de_1%1000)/1000;
+        monedas_de_1=monedas_de_1%1000;
+        billetes_de_500=(monedas_de_1-monedas_de_1%500)/500;
+        monedas_de_1=monedas_de_1%500;
+        billetes_de_200=(monedas_de_1-monedas_de_1%200)/200;
+        monedas_de_1=monedas_de_1%200;
+        billetes_de_100=(monedas_de_1-monedas_de_1%100)/100;
+        monedas_de_1=monedas_de_1%100;
+        billetes_de_50=(monedas_de_1-monedas_de_1%50)/50;
+        monedas_de_1=monedas_de_1%50;
+        billetes_de_20=(monedas_de_1-monedas_de_1%20)/20;
+        monedas_de_1=monedas_de_1%20;
+        monedas_de_10=(monedas_de_1-monedas_de_1%10)/10;
+        monedas_de_1=monedas_de_1%10;
+        monedas_de_5=(monedas_de_1-monedas_de_1%5)/5;
+        monedas_de_1=monedas_de_1%5;
+        monedas_de_2=(monedas_de_1-monedas_de_1%2)/2;
+        monedas_de_1=monedas_de_1%2;
+        monedas_de_1=(monedas_de_1-monedas_de_1%1)/1;
+        monedas_de_1=monedas_de_1%1;
+        JOptionPane.showMessageDialog(null,
+        		
+            "Valor de billetes de 2000: " + billetes_de_2000 + "\n" +
+            "Valor de billetes de 1000: " + billetes_de_1000 + "\n" +
+            "Valor de billetes de 500: " + billetes_de_500 + "\n" +
+            "Valor de billetes de 200: " + billetes_de_200 + "\n" +
+            "Valor de billetes de 100: " + billetes_de_100 + "\n" +
+            "Valor de billetes de 50: " + billetes_de_50 + "\n" +
+            "Valor de billetes de 20: " + billetes_de_20 + "\n" +
+            "Valor de monedas de 10: " + monedas_de_10 + "\n" +
+            "Valor de monedas de 5: " + monedas_de_5);
+            
+        
+    	
+        
+    {
+    	
+    }
+
+}
+    
+}
+
+
+
+
+Ejercicio 9
+
+package hola;
+
+import java.util.*;
+
+import javax.swing.JOptionPane;
+ 
+public class practic {
+ 
+   
+    private static int numeros3s[];
+
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+ 
+int a[],b[],c[];
+
+a=new int [5]; //este seria el primer arreglo 
+b= new int [5]; // este seria el segundo arreglo
+c= new int [10]; // este seria el arreglo que ordenaria a los dos arreglos anteriores 
+
+System.out.println(" Digite el primer arreglo: ");
+for(int i=0;i<5;i++) {
+	System.out.print((i+1)+" . Digite un numero: ");
+	a[i]=sc.nextInt();
+}
+	
+
+System.out.println("\nDigite el segundo arreglo: ");
+for(int i=0;i<5;i++) {
+	System.out.print((i+1)+" . Digite un numero: ");
+	b[i]=sc.nextInt();
+}
+
+
+int j=0;
+for(int i=0;i<5;i++) {
+	c[j]=a[i];
+	j++;
+	c[j]=b[i];
+	j++;
+	
+}
+	
+System.out.println("\nEl tercer arreglo es: ");
+for(int i=0;i<10;i++) {
+	System.out.println(c[i]+" ");
+	
+}
+
+System.out.println();
+
+}
+    
+}
+
+
+
+
+Ejercicio 10
+
+
+package hola;
+
+import java.util.Scanner;
+
+
+public class practic {
+    public static void main(String[] args) {
+        Scanner lector = new Scanner (System.in);
+        int a,i,aux,b;
+        int arreglo[]=new int[10];
+        System.out.println("Ingrese 10 para comience el arreglo: ");
+        a= lector.nextInt();
+        for(i=0;i<a;i++){
+            System.out.print("X["+(i+1)+"]= ");
+            arreglo[i]=lector.nextInt();
+        }
+        // intercambiar
+        System.out.println("Arreglo sin valores intercambiados ");
+        for(int j=0;j<a;j++){
+            System.out.print(arreglo[j]+", ");
+        }
+       
+        b=a;
+        for(i=0;i<=b/2;i++){
+            aux=arreglo[i];
+            arreglo[i]=arreglo[b-1];
+            arreglo[b-1]=aux;
+            b--;
+        }
+       
+        System.out.println("\nArreglo con sus valorres intercambiados ");
+       for(i=0;i<a;i++){
+          System.out.print(arreglo[i]+", ");
+       }
+    }
+}
+
+
+ 

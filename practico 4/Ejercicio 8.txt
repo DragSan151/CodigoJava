@@ -1,0 +1,65 @@
+Ejercicio 8
+
+
+package hola;
+
+import java.util.*;
+
+import javax.swing.JOptionPane;
+ 
+public class practic {
+ 
+   
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+ 
+        String []sueldo=new String[1];
+        
+    	int billetes_de_2000, billetes_de_1000, billetes_de_500, billetes_de_200, billetes_de_100;
+        int billetes_de_50, billetes_de_20,  monedas_de_10, monedas_de_5,monedas_de_2,monedas_de_1;
+        int sueldo1 = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el sueldo "));
+        monedas_de_1=sueldo1;
+        billetes_de_2000=(monedas_de_1-monedas_de_1%2000)/2000;
+        monedas_de_1=monedas_de_1%2000;
+        billetes_de_1000=(monedas_de_1-monedas_de_1%1000)/1000;
+        monedas_de_1=monedas_de_1%1000;
+        billetes_de_500=(monedas_de_1-monedas_de_1%500)/500;
+        monedas_de_1=monedas_de_1%500;
+        billetes_de_200=(monedas_de_1-monedas_de_1%200)/200;
+        monedas_de_1=monedas_de_1%200;
+        billetes_de_100=(monedas_de_1-monedas_de_1%100)/100;
+        monedas_de_1=monedas_de_1%100;
+        billetes_de_50=(monedas_de_1-monedas_de_1%50)/50;
+        monedas_de_1=monedas_de_1%50;
+        billetes_de_20=(monedas_de_1-monedas_de_1%20)/20;
+        monedas_de_1=monedas_de_1%20;
+        monedas_de_10=(monedas_de_1-monedas_de_1%10)/10;
+        monedas_de_1=monedas_de_1%10;
+        monedas_de_5=(monedas_de_1-monedas_de_1%5)/5;
+        monedas_de_1=monedas_de_1%5;
+        monedas_de_2=(monedas_de_1-monedas_de_1%2)/2;
+        monedas_de_1=monedas_de_1%2;
+        monedas_de_1=(monedas_de_1-monedas_de_1%1)/1;
+        monedas_de_1=monedas_de_1%1;
+        JOptionPane.showMessageDialog(null,
+        		
+            "Valor de billetes de 2000: " + billetes_de_2000 + "\n" +
+            "Valor de billetes de 1000: " + billetes_de_1000 + "\n" +
+            "Valor de billetes de 500: " + billetes_de_500 + "\n" +
+            "Valor de billetes de 200: " + billetes_de_200 + "\n" +
+            "Valor de billetes de 100: " + billetes_de_100 + "\n" +
+            "Valor de billetes de 50: " + billetes_de_50 + "\n" +
+            "Valor de billetes de 20: " + billetes_de_20 + "\n" +
+            "Valor de monedas de 10: " + monedas_de_10 + "\n" +
+            "Valor de monedas de 5: " + monedas_de_5);
+            
+        
+    	
+        
+    {
+    	
+    }
+
+}
+    
+}

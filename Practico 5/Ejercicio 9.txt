@@ -1,0 +1,160 @@
+package hola;
+
+import java.util.Scanner;
+
+public class Practico {
+
+	public static void main(String[] args) {
+
+		int mes = Metodos.MetodosIngresar.ingresoINT("Ingresa el numero de mes de nacimiento: ");
+
+		int fecha = Metodos.MetodosIngresar.ingresoINT(" Ingresa la fecha cuando nacio: ");
+
+		switch (mes) {
+		case 1:
+			System.out.println(" nacio en enero  ");
+			if (fecha < 20) {
+				System.out.println(" su signo es Capricornio ");
+				System.out.println(" Las ventaja son: Pragmáticos, tranquilos y muy familiares, un Capricornio será un novio serio y formal que nunca te fallará ");
+				System.out.println(" Las desventajas son: Pueden ser demasiado controladores y, en busca de esa estabilidad, también aburridos ");
+			} else {
+				System.out.println(" su signo es Acuario ");
+				System.out.println("Las ventajas son: aman la libertad y la independencia. Son sociables y aunque les cuesta establecer vínculos, una vez se unen a otras personas, son leales, generosas y dignos de confianza ");
+				System.out.println("Las desventajas son: un carácter caprichoso e infantil que se preocupa muy poco por los demás. Son personas irresponsables a las que no les gustan las obligaciones ");
+			}
+			break;
+		case 2:
+			System.out.println(" nacio en febrero ");
+			if (fecha < 18) {
+				System.out.println(" su signo es Acuario ");
+				System.out.println("Las ventajas son: aman la libertad y la independencia. Son sociables y aunque les cuesta establecer vínculos, una vez se unen a otras personas, son leales, generosas y dignos de confianza ");
+				System.out.println("Las desventajas son: un carácter caprichoso e infantil que se preocupa muy poco por los demás. Son personas irresponsables a las que no les gustan las obligaciones ");
+			} else {
+				System.out.println(" su signo es Piscis ");
+				System.out.println(" Las ventajas son: Son sociables, comprensivos, románticos y muy generosos. Es el mejor amigo de sus amigos y, además, tremendamente empático ");
+				System.out.println(" Las desventajas son:  A veces tienen problemas para expresar sus sentimientos lo cual les hace cerrarse en banda ");
+			}
+			break;
+		case 3:
+			System.out.println(" nacio en marzo ");
+			if (fecha < 20) {
+				System.out.println(" su signo es Piscis ");
+				System.out.println(" Las ventajas son: Son sociables, comprensivos, románticos y muy generosos. Es el mejor amigo de sus amigos y, además, tremendamente empático ");
+				System.out.println(" Las desventajas son:  A veces tienen problemas para expresar sus sentimientos lo cual les hace cerrarse en banda ");
+			} else {
+				System.out.println(" su signo es Aries ");
+				System.out.println(" Las ventajas son:  Divertidos, aventureros y siempre con una inagotable energía. Si te la contagian, la combinación de ambos viviendo al límite puede ser simplemente maravillosa ");
+				System.out.println(" Las desventajas son:  Si no consigues esa química imprescindible te costará mucho seguirle el ritmo y te sentirás siempre un paso por detrás de él ");
+			}
+			break;
+		case 4:
+			System.out.println(" nacio en abril ");
+			if(fecha<20) {
+            	System.out.println(" su signo es Aries ");
+            	System.out.println(" Las ventajas son:  Divertidos, aventureros y siempre con una inagotable energía. Si te la contagian, la combinación de ambos viviendo al límite puede ser simplemente maravillosa ");
+				System.out.println(" Las desventajas son:  Si no consigues esa química imprescindible te costará mucho seguirle el ritmo y te sentirás siempre un paso por detrás de él ");
+            }else {
+            	System.out.println(" su signo es Tauro ");
+            	System.out.println(" Las ventajas son: Protectores, amorosos, y siempre preocupados por sus parejas, un Tauro te hará sentir como la mujer más querida del mundo ");
+            	System.out.println(" Las desventajas son: Son muy tercos y detestan que les lleven la contraria aunque sepan que no tengan razón, algo que puede terminar por sacar de quicio hasta a la más paciente ");
+            }
+			break;
+		case 5:
+			System.out.println(" nacio en mayo ");
+			if(fecha<20) {
+            	System.out.println(" su signo es Tauro ");
+            	System.out.println(" Las ventajas son: Protectores, amorosos, y siempre preocupados por sus parejas, un Tauro te hará sentir como la mujer más querida del mundo ");
+            	System.out.println(" Las desventajas son: Son muy tercos y detestan que les lleven la contraria aunque sepan que no tengan razón, algo que puede terminar por sacar de quicio hasta a la más paciente ");
+            }else {
+            	System.out.println(" su signo es Geminis ");
+            	System.out.println(" Las ventajas son: Son espíritus inquietos, muy optimistas, positivos y muy inteligentes. Nunca te faltará conversación con ellos ");
+            	System.out.println(" Las desventajas son: Como su propio signo indica hay una dualidad en su carácter que le hace ser un poco inestable y demasiado variable ");
+            }
+			break;
+		case 6:
+			System.out.println(" nacio en junio ");
+			if(fecha<21) {
+            	System.out.println(" su signo es Geminis ");
+            	System.out.println(" Las ventajas son: Son espíritus inquietos, muy optimistas, positivos y muy inteligentes. Nunca te faltará conversación con ellos ");
+            	System.out.println(" Las desventajas son: Como su propio signo indica hay una dualidad en su carácter que le hace ser un poco inestable y demasiado variable ");
+            }else {
+            	System.out.println(" su signo es Cáncer ");
+            	System.out.println(" Las ventajas son: Con una gran imaginación, son emotivos, cariñosos y disfrutan mucho con los placeres de la vida. Además, les encanta enamorarse ");
+            	System.out.println(" Las desventajas son: Su susceptibilidad les hace ser un tanto conflictivos ya que se enfadan con demasiada facilidad ");
+            }
+			break;
+		case 7:
+			System.out.println(" nacio en julio ");
+			if(fecha<22) {
+            	System.out.println(" su signo es Cáncer ");
+            	System.out.println(" Las ventajas son: Con una gran imaginación, son emotivos, cariñosos y disfrutan mucho con los placeres de la vida. Además, les encanta enamorarse ");
+            	System.out.println(" Las desventajas son: Su susceptibilidad les hace ser un tanto conflictivos ya que se enfadan con demasiada facilidad ");
+            }else {
+            	System.out.println(" su signo es Leo ");
+            	System.out.println(" Las ventajas son: Fieles, cariñosos y muy generosos, los Leo son personas divertidas, amantes de la familia y muy aventureros ");
+            	System.out.println(" Las desventajas son: A pesar de su carácter inicialmente afable pueden llegar a ser un tanto mandones y son demasiado caprichosos ");
+            }
+			break;
+		case 8:
+			System.out.println(" nacio en agosto ");
+			if(fecha<22) {
+            	System.out.println(" su signo es Leo ");
+            	System.out.println(" Las ventajas son: Fieles, cariñosos y muy generosos, los Leo son personas divertidas, amantes de la familia y muy aventureros ");
+            	System.out.println(" Las desventajas son: A pesar de su carácter inicialmente afable pueden llegar a ser un tanto mandones y son demasiado caprichosos ");
+            }else {
+            	System.out.println(" su signo es Virgo ");
+            	System.out.println(" Las ventajas son: Como pareja son absolutamente adorables, cariñosos y muy atentos. Les preocupan muchísimo los sentimientos de la otra persona y harán todo lo posible para entenderte en todo momento ");
+            	System.out.println(" Las desventajas son: Esperan lo mismo de ti y a veces pueden resultar un poco cargantes por ser excesivamente sensibles ");
+            }
+			break;
+		case 9:
+			System.out.println(" nacio en septiembre ");
+			if(fecha<22) {
+            	System.out.println(" su signo es Virgo ");
+            	System.out.println(" Las ventajas son: Como pareja son absolutamente adorables, cariñosos y muy atentos. Les preocupan muchísimo los sentimientos de la otra persona y harán todo lo posible para entenderte en todo momento ");
+            	System.out.println(" Las desventajas son: Esperan lo mismo de ti y a veces pueden resultar un poco cargantes por ser excesivamente sensibles ");
+            }else {
+            	System.out.println(" su signo es Libra ");
+            	System.out.println(" Las ventajas son: Sociables, con un atractivo innato y un gran sentido del humor, los Libra son tremendos seductores. Además, son MUY sexuales ");
+            	System.out.println(" Las desventajas son: A veces se pasan de diplomáticos y, con tal de evitar un conflicto, preferirá guardarse el problema que tenga para sí hasta que explote ");
+            }
+			break;
+		case 10:
+			System.out.println(" nacio en octubre ");
+			if(fecha<22) {
+            	System.out.println(" su signo es Libra ");
+            	System.out.println(" Las ventajas son: Sociables, con un atractivo innato y un gran sentido del humor, los Libra son tremendos seductores. Además, son MUY sexuales ");
+            	System.out.println(" Las desventajas son: A veces se pasan de diplomáticos y, con tal de evitar un conflicto, preferirá guardarse el problema que tenga para sí hasta que explote ");
+            }else {
+            	System.out.println(" su signo es Escorpio ");
+            	System.out.println(" Las ventajas son: Éste es el signo del zodíaco más sexual con lo que está garantizada una relación de máxima intensidad con él. Además, son leale,s sinceros y resolutivos ");
+            	System.out.println(" Las desventajas son: A veces se pasan de melodramáticos y se toman la vida demasiado en serio ");
+            }
+			break;
+		case 11:
+			System.out.println(" nacio en noviembre ");
+			if(fecha<22) {
+            	System.out.println(" su signo es Escorpio ");
+            	System.out.println(" Las ventajas son: Éste es el signo del zodíaco más sexual con lo que está garantizada una relación de máxima intensidad con él. Además, son leale,s sinceros y resolutivos ");
+            	System.out.println(" Las desventajas son: A veces se pasan de melodramáticos y se toman la vida demasiado en serio ");
+            }else {
+            	System.out.println(" su signo es Sagitario ");
+            	System.out.println(" Las ventajas son: Abiertos de mente, aventureros, extrovertidos y amantes de la diversión. Como pareja son fieles y muy buenos amantes ");
+            	System.out.println(" Las desventajas son: Tienen un carácter tan curioso que a veces les cuesta fijarse en una sola cosa ");
+            }
+			break;
+		case 12:
+			System.out.println(" nacio en diciembre ");
+			if(fecha<21) {
+            	System.out.println(" su signo es Sagitario ");
+            	System.out.println(" Las ventajas son: Abiertos de mente, aventureros, extrovertidos y amantes de la diversión. Como pareja son fieles y muy buenos amantes ");
+            	System.out.println(" Las desventajas son: Tienen un carácter tan curioso que a veces les cuesta fijarse en una sola cosa ");
+            }else {
+            	System.out.println(" su signo es Capricornio ");
+            	System.out.println(" Las ventaja son: Pragmáticos, tranquilos y muy familiares, un Capricornio será un novio serio y formal que nunca te fallará ");
+				System.out.println(" Las desventajas son: Pueden ser demasiado controladores y, en busca de esa estabilidad, también aburridos ");
+            }
+            break;
+		}
+	}
+}

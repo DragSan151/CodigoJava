@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class ejercicio1 {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int num1,num2,num3,suma,resta,resultado = 0,promedio;
+	double porcentaje;
+	Scanner lectura=new Scanner (System.in);
+	System.out.println(" ingrese el 1er numero ");
+	num1=lectura.nextInt();
+	
+	System.out.println(" ingrese el 2do numero ");
+	num2=lectura.nextInt();
+	
+	System.out.println("ingrese el 3er numero");
+	num3=lectura.nextInt();
+	
+	suma=num1+num2+num3;
+	System.out.println(" la suma es " + suma);
+	
+	resta=suma-num3;
+	System.out.println("el resultado de la resta es" + resta);
+	
+	 promedio = (num1+num2+num3) / 3;
+	 System.out.println("el promedio total es"+ promedio);
+	 
+	 porcentaje=suma*0.1;
+	 System.out.println(" el 10% de la suma es " + porcentaje);
+	 
+	 porcentaje=suma+promedio*0.15;
+	 System.out.println(" el 15% en total es " + porcentaje);
+	 
+	 
+	
+}
+	
+}

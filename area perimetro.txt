@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class ejercicio1 {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int base=0,altura=0,tipo=0,radio=0,lados=0;
+	double perimetro=0;
+	double area=0;
+	double pi;
+
+	Scanner lectura=new Scanner (System.in);
+	System.out.println(" calculo de area de figuras geometricas ");
+	System.out.println(" Triangulo -1\n cuadrado-2\n Circunferencia-3\n");
+	System.out.println(" Escribe el  numero del tipo de figura de la que quieras saber su area");
+	
+	{
+	
+	if(tipo==3);
+	
+	pi=3.14;
+	System.out.println(" la formula para el area de la circunferencia es pi*r2 y el perimetro es 2*pi*radio");
+	System.out.println(" pon el radio");
+	radio=radio*2;
+	area=radio*pi;
+	perimetro=2*pi*radio;
+	System.out.println("el area es" + area + "el perimetro " + perimetro);
+	
+	
+	if(tipo==1);
+	
+	System.out.println(" la formula para el area de triangulo es base*altura y el perimetro es lado*3");
+	System.out.println(" pon la base ");
+	System.out.println(" pon la altura");
+	System.out.println(" pon los lados");
+	area=base*altura;
+	perimetro=lados*3;
+	
+	System.out.println(" su area del traingulo es " + area + " el perimetro es" + perimetro);
+	
+			
+	
+    if(tipo==2);
+    System.out.println(" la formula del area del cuadrado es base lado*lado y el perimetro es lado+lado+lado+lado ");
+    System.out.println(" pon 1 lado");
+    area=lados*lados;
+    perimetro=lados+lados+lados+lados;
+    System.out.println(" su area del cuadrado es " + area + "el perimetro es "+ perimetro);
+    
+	 
+	 
+	
+}
+	
+}
+
+
+	{
+
+
+	}}

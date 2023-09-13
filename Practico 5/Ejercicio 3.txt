@@ -1,0 +1,31 @@
+package hola;
+
+import java.util.Scanner;
+
+
+public class practic {
+    public static void main(String[] args) {
+        Scanner lector = new Scanner (System.in);
+        
+        
+        
+        //Ejercicio 3
+        //Escribir un método que convierta una temperatura dada en grados
+        //Celsius a grados Fahrenheit. La fórmula de conversión es: 
+        
+        
+        double numero=Metodos.MetodosIngresar.ingresoDouble("ingrese temperatura en celcius: ");
+        
+        
+        System.out.println(" Resultado Celcius "+numero+ " a grados Fahrenheit.: " + convertir(numero));
+        
+    
+        
+        	
+        }
+
+	private static double convertir(double numero) {
+		return numero*9/5+32;
+	}
+	
+}

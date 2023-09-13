@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class ejercicio1 {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int sueldo;
+	double sueldoliquidacion;
+	double FRL;
+	double FONASA;
+	double BPS;
+	double IRPF;
+	
+	Scanner lectura=new Scanner (System.in);
+	System.out.println(" ingrese el sueldo del empleado ");
+	sueldo=lectura.nextInt();
+	
+	IRPF=sueldo*0.1;
+	System.out.println("le descuenta  el IRPF" + IRPF);
+	
+	BPS=sueldo*0.15;
+	System.out.println(" le descuenta el BPS "+ BPS);
+	
+	FONASA=sueldo*0.6;
+	System.out.println(" le descuenta el fonasa " + FONASA);
+	
+	FRL=sueldo*0.00125;
+	System.out.println(" le descuenta el FRL "+ FRL);
+	
+	
+	sueldoliquidacion=IRPF+BPS+FONASA+FRL;
+	System.out.println("el sueldo liquidacion sera " + sueldoliquidacion);
+	
+
+	 
+	 
+	
+}
+	
+}

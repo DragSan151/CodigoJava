@@ -1,0 +1,34 @@
+Ejercicio 4
+
+
+package hola;
+
+import java.util.Scanner;
+
+
+public class practic {
+    public static void main(String[] args) {
+        Scanner lector = new Scanner (System.in);
+        
+        int arreglo []= {1,78,46,52,13,2,44,9,4,13};
+        
+        
+        System.out.println("***********************************");
+        for (int i = 0; i < arreglo.length; i++) {
+			System.out.println(arreglo[i]);
+		}
+        
+        for(int i=0;i<arreglo.length;i++) {
+        	
+        	arreglo[i]=arreglo[i]*i;
+        	System.out.println(" numeros Productos: " +arreglo[i]+ " * " +i);
+        }
+        
+        System.out.println("************************************");
+        for (int i = 0; i < arreglo.length; i++) {
+			System.out.println(arreglo[i]);
+			
+		}
+       
+    }
+}
