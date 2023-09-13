@@ -1,0 +1,105 @@
+package hola;
+
+import java.util.Scanner;
+
+import javax.swing.*;
+
+import javax.swing.JOptionPane;
+
+public class practic {
+
+	
+	private static Scanner lectura;
+	public static void main (String args []) {
+		
+		
+		
+		Scanner lectura=new Scanner (System.in);
+		
+		String Monto=JOptionPane.showInputDialog(" ingresar un monto a depositar: ");
+		
+		System.out.println(" su monto es: " + Monto);
+		
+		String moneda=JOptionPane.showInputDialog("seleccione tipo de moneda: 1- Dolares , 2- Pesos Uruguayos , 3- Euros ");
+		
+		int monedas_tipo=Integer.parseInt(moneda);
+		double suma = 0;
+		
+		double multiplicacion;
+		
+		int Monto_Cantidad=Integer.parseInt(Monto);
+		
+		
+		
+		if(monedas_tipo==1) {
+			
+			System.out.println(" El monto es en Dolares: USD" + Monto  );
+		}
+		
+		if(monedas_tipo==2) {
+			System.out.println(" El monto es en Pesos Uruguayos: UYU" + Monto  );
+		}
+		
+		if(monedas_tipo==3) {
+			System.out.println(" El monto es en Euros: €" + Monto  );
+		}
+		
+		
+		String dias=JOptionPane.showInputDialog("seleccione el tipo de plazo en que se depositara: "
+				+ "1- 1% a 30 días, "
+				+ "2- 3% a 60 días, "
+				+ "3- 6% a 90 días, "
+				+ "4- 10% a 120 días, "
+				+ "5- 15% a 180 días, "
+				+ "6- 21% a plazo fijo, ");
+		
+		
+        int dias_tipo=Integer.parseInt(dias);
+        
+       if (dias_tipo==1) {
+    	   multiplicacion=Monto_Cantidad*0.01;
+    	   suma=multiplicacion+Monto_Cantidad;
+    	   System.out.println(" el tipo de plazo en que se depositara es 1% a 30 dias " + suma);
+    	   
+    	   
+    	  
+       }
+		 
+       if (dias_tipo==2) {
+    	   multiplicacion=Monto_Cantidad*0.03;
+    	   suma=multiplicacion+Monto_Cantidad;
+    	   System.out.println(" el tipo de plazo en que se depositara es 3% a 60 días " + suma);
+    	   
+       }
+		
+		 
+       if (dias_tipo==3) {
+    	   multiplicacion=Monto_Cantidad*0.06;
+    	   suma=multiplicacion+Monto_Cantidad;
+    	   System.out.println(" el tipo de plazo en que se depositara es 6% a 90 días " + suma);
+    	   
+       }
+       
+       if (dias_tipo==4) {
+    	   multiplicacion=Monto_Cantidad*0.1;
+    	   suma=multiplicacion+Monto_Cantidad;
+    	   System.out.println(" el tipo de plazo en que se depositara es 10% a 120 días " + suma);
+    	   
+       }
+       
+       if (dias_tipo==5) {
+    	   multiplicacion=Monto_Cantidad*0.15;
+    	   suma=multiplicacion+Monto_Cantidad;
+    	   System.out.println(" el tipo de plazo en que se depositara es 15% a 180 días " + suma);
+    	   
+       }
+       
+       if (dias_tipo==6) {
+    	   multiplicacion=Monto_Cantidad*0.21;
+    	   suma=multiplicacion+Monto_Cantidad;
+    	   System.out.println(" el tipo de plazo en que se depositara es 21% a plazo fijo " + suma);
+    	   
+       }
+	}
+	
+}

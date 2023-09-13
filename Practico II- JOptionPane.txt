@@ -1,0 +1,120 @@
+package hola;
+
+import java.util.Scanner;
+
+import javax.swing.*;
+
+import javax.swing.JOptionPane;
+
+public class practic {
+
+	
+	private static Scanner lectura;
+	private static int Hora_Practico;
+	public static void main (String args []) {
+		
+		
+		
+		Scanner lectura=new Scanner (System.in);
+		
+		String Cantidad=JOptionPane.showInputDialog(" ingresar la cantidad de horas comunes trabajadas por el \r\n"
+				+ "empleado: ");
+		
+		System.out.println(" la cantidad de horas comunes son:" +Cantidad);
+		
+		String Hora=JOptionPane.showInputDialog(" ingresar el precio de la hora del empleado: ");
+		
+		System.out.println(" el precio de hora seria: " + Hora);
+		
+		int Hora_Precio=Integer.parseInt(Hora);
+		
+		if(Hora_Practico>125) {
+			System.out.println(" el precio de hora ingresado excede los $125 ");
+		}
+       
+		int Cantidad_Extra=Integer.parseInt(Cantidad);
+		int resta = 0;
+		int Salario;
+		int Salario_;
+		double suma;
+		double Valor;
+		double Salario_Real;
+		
+		if(Cantidad_Extra>=160)
+			resta=Cantidad_Extra-160;
+			System.out.println(" las horas extras son " + resta);
+		
+			
+			Salario=160*Hora_Precio;
+			
+			
+			
+			Salario_= resta/2;
+			suma=Salario_+resta;
+			Valor=suma*Hora_Precio;
+			
+			
+			
+			
+			Salario_Real=Salario+Valor;
+			System.out.println(" El sueldo del empleado es: " + Salario_Real);
+			
+			
+			String Turno=JOptionPane.showInputDialog(" El empleado trabaja en turno nocturno? :  1-SI , 2-NO ");
+			
+		   int Turno_Nocturno=Integer.parseInt(Turno);
+		   double Turno_Empleado = 0;
+		   int Porcentaje;
+		   double Sueldo_Entero = 0;
+		   if(Turno_Nocturno==1) {
+			   Turno_Empleado=Salario_Real*0.09;
+			   Sueldo_Entero=Turno_Empleado+Salario_Real;
+			   System.out.println(" Su empleado trabaja en el turno nocturno le debe pagar un 9% más: " +Sueldo_Entero );
+			   
+		   }
+		   
+		   
+		   String Fonasa=JOptionPane.showInputDialog(" El empleado tiene hijos?  1-SI , 2-NO");
+		   double multiplicacion;
+			int Fonasa_Empleado=Integer.parseInt(Fonasa);
+			double resta1;
+			if(Fonasa_Empleado==1) {
+				multiplicacion=Salario_Real*0.06;
+				
+				System.out.println(" Le descuenta el 6% porque posee hijos " + multiplicacion);
+			}else {
+				multiplicacion=Salario_Real*0.04;
+				
+				System.out.println(" Le descuenta el 4% porque no posee hijos " + multiplicacion);
+				
+				
+			}
+		    
+		    
+			double BPS;
+			BPS=Salario_Real*0.15;
+			System.out.println(" Se le descuenta el 15% del BPS: " +BPS);
+			
+			
+			double FRL;
+			FRL=Salario_Real*0.00125;
+			System.out.println(" Se le descuenta el 0.0125% del FRL: " + FRL);
+	
+			
+			
+			double sueldoliquidacion;
+			double Sueldo;
+			double TurnoNocturno;
+			
+			Sueldo=multiplicacion+BPS+FRL;
+			TurnoNocturno=Salario_Real+Turno_Empleado;
+			sueldoliquidacion=Sueldo-TurnoNocturno;
+			
+			
+			System.out.println("El sueldo con los decuentos seria: " + sueldoliquidacion);
+			
+			
+			
+	}
+	
+}

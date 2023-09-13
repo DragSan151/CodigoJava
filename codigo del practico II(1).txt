@@ -1,0 +1,706 @@
+1)Hacer un programa que permita ingresar una variable numérica y
+conteste en la consola si el valor asignado es mayor a diez.
+
+
+1)import java.util.Scanner;
+
+public class proyect {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int num1;
+	Scanner lectura=new Scanner(System.in);
+	System.out.println("ingrese un numero");
+	num1=lectura.nextInt();
+	
+	System.out.println(" el numero es "+ num1);
+	
+	if(num1>10) {
+		System.out.println("su numero es mayor ");
+		
+	}else {
+		System.out.println(" su numero es menor ");
+	}
+	 
+	
+}
+	
+}
+
+
+
+
+
+
+
+
+
+
+2)Crear un programa que permita ingresar 2 valores e indique cual es el
+mayor y cual el menor. Además deberá indicar si es que hay igualdades.
+Despliegue en la consola.
+
+
+2)import java.util.Scanner;
+
+public class proyect {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int num1,num2;
+	Scanner lectura=new Scanner(System.in);
+	System.out.println("ingrese un numero");
+	num1=lectura.nextInt();
+	System.out.println("ingrese el segundo numero");
+	num2=lectura.nextInt();
+	
+	
+	System.out.println(" el numero 1 es "+ num1 + " y el numero 2 es " + num2);
+	
+	if(num1>num2) {
+		System.out.println(" su numero 1 es mayor ");
+		
+		
+	}else if(num2>num1) { 
+		System.out.println(" su numero 2 es mayor ");
+	}
+		
+	if(num1<num2){
+		System.out.println(" los numero 1 es menor ");
+		
+		
+	}else if(num2<num1){
+		System.out.println(" los numero 2 es menor ");
+	}
+		
+	
+	if(num1==num2){
+		System.out.println(" el numero 1 es igual al numero 2 ");
+	}
+			
+		
+		
+		
+			
+}
+	
+}
+
+
+
+
+
+
+3)Crear un programa que permita definir 2 variables numéricas y realice
+la multiplicación entre ambos, también la división siempre y cuando el primer
+valor sea mayor que el segundo valor. Desplegar resultados.
+
+
+
+3)import java.util.Scanner;
+
+public class proyect {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int num1,num2,multiplicacion,division;
+	Scanner lectura=new Scanner(System.in);
+	System.out.println("ingrese un numero");
+	num1=lectura.nextInt();
+	System.out.println("ingrese el segundo numero");
+	num2=lectura.nextInt();
+	
+	System.out.println(" el numero 1 es "+ num1 + " y el numero 2 es " + num2);
+	
+	multiplicacion=num1*num2;
+	System.out.println(" su multiplicacion es " + multiplicacion);
+	
+	
+	division=num1/num2;
+	System.out.println(" su division es " + division);
+	
+	
+	if(num1>num2) {
+		System.out.println(" el numero 1 es mayor " + num1);
+	}
+	 
+				
+}
+	
+}
+	
+
+
+
+
+
+
+4)Crear un programa que permita ingresar 3 valores e indique cual es el
+mayor.
+
+
+
+
+4)import java.util.Scanner;
+
+public class proyect {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int num1,num2,num3;
+	Scanner lectura=new Scanner(System.in);
+	System.out.println("ingrese un numero");
+	num1=lectura.nextInt();
+	System.out.println("ingrese el segundo numero");
+	num2=lectura.nextInt();
+	System.out.println("ingrese el tercer numero");
+	num3=lectura.nextInt();
+	
+	if(num1>num2&num1>num3) {
+		System.out.println(" el numero mayor es " + num1);
+		
+		
+	}else if(num2>num1&num2>num3) {
+		System.out.println(" el numero mayor es " + num2);
+		
+		
+	}else if(num3>num1&num3>num2) {
+		System.out.println(" el numero mayor es " + num3);
+	}
+}
+	
+}
+	
+
+
+
+5)Crear un programa que permita ingresar 3 valores e indique cual es el
+menor
+
+
+
+5)import java.util.Scanner;
+
+public class proyect {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int num1,num2,num3;
+	Scanner lectura=new Scanner(System.in);
+	System.out.println("ingrese un numero");
+	num1=lectura.nextInt();
+	System.out.println("ingrese el segundo numero");
+	num2=lectura.nextInt();
+	System.out.println("ingrese el tercer numero");
+	num3=lectura.nextInt();
+	
+	if(num1<num2&num1<num3) {
+		System.out.println(" el numero menor es " + num1);
+		
+		
+	}else if(num2<num1&num2<num3) {
+		System.out.println(" el numero menor es " + num2);
+		
+		
+	}else if(num3<num1&num3<num2) {
+		System.out.println(" el numero menor es " + num3);
+	}
+}
+	
+}
+
+
+
+
+
+
+
+6)Crear un programa que permita ingresar 3 valores e indique cual es el
+mayor, cual es el del medio y cual el menor, también que indique si hay casos
+de igualdades.
+
+
+
+
+6)import java.util.Scanner;
+
+public class proyect {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int num1,num2,num3;
+	Scanner lectura=new Scanner(System.in);
+	System.out.println("ingrese un numero");
+	num1=lectura.nextInt();
+	System.out.println("ingrese el segundo numero");
+	num2=lectura.nextInt();
+	System.out.println("ingrese el tercer numero");
+	num3=lectura.nextInt();
+	
+	if(num1>num2&num1>num3) {
+		System.out.println(" el numero mayor es " + num1);
+		
+		
+	}else if(num2>num1&num2>num3) {
+		System.out.println(" el numero mayor es " + num2);
+		
+		
+	}else if(num3>num1&num3>num2) {
+		System.out.println(" el numero mayor es " + num3);
+		
+	} 
+	
+	if(num1<num2&num1<num3) {
+		System.out.println(" el numero menor es " + num1);
+		
+		
+	}else if(num2<num1&num2<num3) {
+		System.out.println(" el numero menor es " + num2);
+		
+		
+		
+	}else if(num3<num1&num3<num2) {
+		System.out.println(" el numero menor es  " + num3);
+		
+	}
+	
+	if(num1<num2&num2>num3) {
+		System.out.println(" el numero medio es " + num1);
+		
+	}else if(num2<num1&num1>num3) {
+		System.out.println(" el numero medio es " + num2);
+		
+	}else if(num1<num3&num3>num2) {
+		System.out.println(" el numero medio es " + num3);
+	}
+	
+	
+	if(num1==num2&num1==num3) {
+		System.out.println(" los numeros son  iguales ");
+	}
+}
+	
+}
+	
+
+
+
+
+
+
+
+
+7)Se ingresan 3 números, desplegar la suma de los dos mayores
+
+
+
+7)import java.util.Scanner;
+
+public class proyect {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int num1,num2,num3,suma = 0;
+	Scanner lectura=new Scanner(System.in);
+	System.out.println("ingrese un numero");
+	num1=lectura.nextInt();
+	System.out.println("ingrese el segundo numero");
+	num2=lectura.nextInt();
+	System.out.println("ingrese el tercer numero");
+	num3=lectura.nextInt();
+	
+	if(num1>num2) {
+		System.out.println(" el numero mayor es " + num1);
+		
+		suma=num1+num2;
+		System.out.println(" la suma es " + suma);
+	}else  {
+		System.out.println(" el numero mayor es " + num2);
+		
+		suma=num1+num2;
+		System.out.println(" la suma es " + suma);
+	}
+		
+	if(num3>num2) {
+		System.out.println(" el numero mayor es " + num3);
+		
+		
+	}else  {
+		System.out.println(" el numero mayor es " + num2);
+		
+		suma=num3+num2;
+	}
+		
+	
+}
+	
+}
+
+
+
+
+
+8)Se ingresan 3 números y se sabe que dos de ellos son siempre iguales,
+es decir que siempre se van a ingresar dos iguales, desplegar la suma de los
+dos iguales.
+
+
+8)import java.util.Scanner;
+
+public class proyect {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int num1,num2,num3,suma = 0;
+	Scanner lectura=new Scanner(System.in);
+	System.out.println("ingrese un numero");
+	num1=lectura.nextInt();
+	System.out.println("ingrese el segundo numero");
+	num2=lectura.nextInt();
+	System.out.println("ingrese el tercer numero");
+	num3=lectura.nextInt();
+	
+	if(num1==num2) {
+		System.out.println(" los numeros son iguales " + num1);
+		
+		suma=num1+num2;
+		System.out.println(" la suma es " + suma);
+	}
+	if(num3==num2) {
+		System.out.println(" los numeros son iguales" + num3);
+		
+		suma=num3+num2;
+		System.out.println(" la suma es " + suma);
+	}
+		
+	
+	}
+		
+		
+	}
+
+
+
+
+
+9)Crear un programa que permita llevar a cabo el perímetro y área de 3
+figuras geométricas cualesquiera. Se deberá desplegar en la consola un menú
+donde el usuario podrá seleccionar cual de las figuras desea. Desplegar los
+resultados de los cálculos en la consola.
+
+
+9)import java.util.Scanner;
+
+public class ejercicio1 {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int base=0,altura=0,tipo=0,radio=0,lados=0;
+	double perimetro=0;
+	double area=0;
+	double pi;
+
+	Scanner lectura=new Scanner (System.in);
+	System.out.println(" calculo de area de figuras geometricas ");
+	System.out.println(" Triangulo -1\n cuadrado-2\n Circunferencia-3\n");
+	System.out.println(" Escribe el  numero del tipo de figura de la que quieras saber su area");
+	
+	{
+	
+	if(tipo==3);
+	
+	pi=3.14;
+	System.out.println(" la formula para el area de la circunferencia es pi*r2 y el perimetro es 2*pi*radio");
+	System.out.println(" pon el radio");
+	radio=radio*2;
+	area=radio*pi;
+	perimetro=2*pi*radio;
+	System.out.println("el area es" + area + "el perimetro " + perimetro);
+	
+	
+	if(tipo==1);
+	
+	System.out.println(" la formula para el area de triangulo es base*altura y el perimetro es lado*3");
+	System.out.println(" pon la base ");
+	System.out.println(" pon la altura");
+	System.out.println(" pon los lados");
+	area=base*altura;
+	perimetro=lados*3;
+	
+	System.out.println(" su area del traingulo es " + area + " el perimetro es" + perimetro);
+	
+			
+	
+    if(tipo==2);
+    System.out.println(" la formula del area del cuadrado es base lado*lado y el perimetro es lado+lado+lado+lado ");
+    System.out.println(" pon 1 lado");
+    area=lados*lados;
+    perimetro=lados+lados+lados+lados;
+    System.out.println(" su area del cuadrado es " + area + "el perimetro es "+ perimetro);
+    
+	 
+	 
+	
+}
+	
+}
+
+
+	{
+
+
+	}}
+
+
+10)Modificar el ejercicio del Práctico I, el que realiza la liquidación de
+sueldo, actualice los siguientes datos: ingrese el sueldo del usuario, calcule el
+IRPS, 10% para los que cobran más de $ 19733 y menos de $28190, y los que
+ganan más un 15%. Los demás cálculos de descuentos se mantienen. Calcular
+los descuentos, el total de descuentos y el líquido. Desplegar resultados
+
+
+
+10)import java.util.Scanner;
+
+public class proyect{
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int sueldo;
+	double sueldoliquidacion;
+	double FRL;
+	double FONASA;
+	double BPS;
+	double IRPF;
+	double IRPS = 0;
+	
+	Scanner lectura=new Scanner (System.in);
+	System.out.println(" ingrese el sueldo del empleado ");
+	sueldo=lectura.nextInt();
+	
+	IRPF=sueldo*0.1;
+	System.out.println( "le descuenta  el IRPF " + IRPF);
+	 
+	BPS=sueldo*0.15;
+	System.out.println(" le descuenta el BPS "+ BPS);
+	
+	FONASA=sueldo*0.06;
+	System.out.println(" le descuenta el fonasa " + FONASA);
+	
+	FRL=sueldo*0.125;
+	System.out.println(" le descuenta el FRL "+ FRL);
+	
+	
+	if(sueldo>19733&sueldo<28190) {
+		IRPS=sueldo*0.1;
+		System.out.println(" le descuenta el IRPS " + IRPS);
+	}else {
+		IRPS=sueldo*0.15;
+		System.out.println(" le descuenta el IRPS " + IRPS);
+	}
+	
+	
+	sueldoliquidacion=IRPF+BPS+FONASA+FRL+IRPS;
+	System.out.println("el sueldo liquidacion sera " + sueldoliquidacion);
+	
+	
+	
+	
+
+	 
+	 
+	
+}
+	
+}
+
+
+
+11)Modificar el ejercicio anterior y realizar los cálculos para todas las
+franjas del IRPF: (valores 2014)
+ $19.734 a $28.190 – 10%
+ $28.191 a $42.285 – 15%
+ $42.286 a $140.950 – 20%
+ $140.951 a $211.425 – 22%
+ $211.426 a $324.185 – 25%
+ Más de $324.186 – 30%
+
+
+
+11)import java.util.Scanner;
+
+public class proyect{
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+
+	int sueldo;
+	double sueldoliquidacion;
+	double FRL;
+	double FONASA;
+	double BPS;
+	double IRPF = 0;
+	double IRPS = 0;
+	
+	Scanner lectura=new Scanner (System.in);
+	System.out.println(" ingrese el sueldo del empleado ");
+	sueldo=lectura.nextInt();
+	
+	
+	if(sueldo>19734&sueldo<28190) {
+		IRPF=sueldo*0.1;
+		System.out.println( "le descuenta  el IRPF " + IRPF +10);
+	}
+	
+	if(sueldo>28191&sueldo<42285) {
+		IRPF=sueldo*0.15;
+		System.out.println(" le descuenta el IRPF " + IRPF + 15);
+	}
+	 
+	if(sueldo>42286&sueldo<140950) {
+		IRPF=sueldo*0.20;
+		System.out.println(" le descuenta el IRPF " + IRPF + 20);
+	}
+	
+	if(sueldo>140951&sueldo<211425) {
+		IRPF=sueldo*0.22;
+		System.out.println(" le descuenta el IRPF " + IRPF + 22);
+	}
+	
+	if(sueldo>211426&sueldo<324185) {
+		IRPF=sueldo*0.25;
+		System.out.println(" le descuenta el IRPF " + IRPF + 25);
+	}
+	
+	if(sueldo>324186) {
+		IRPF=sueldo*0.30;
+		System.out.println(" le descuenta el IRPF " + IRPF + 30);
+	}
+	
+	BPS=sueldo*0.15;
+	System.out.println(" le descuenta el BPS "+ BPS);
+	
+	FONASA=sueldo*0.06;
+	System.out.println(" le descuenta el fonasa " + FONASA);
+	
+	FRL=sueldo*0.125;
+	System.out.println(" le descuenta el FRL "+ FRL);
+	
+	
+	if(sueldo>19733&sueldo<28190) {
+		IRPS=sueldo*0.1;
+		System.out.println(" le descuenta el IRPS " + IRPS);
+	}else {
+		IRPS=sueldo*0.15;
+		System.out.println(" le descuenta el IRPS " + IRPS);
+	}
+	
+	
+	sueldoliquidacion=IRPF+BPS+FONASA+FRL+IRPS;
+	System.out.println("el sueldo liquidacion sera " + sueldoliquidacion);
+	
+	
+	
+	
+
+	 
+	 
+	
+}
+	
+}
+
+
+12)Se pide ingresar tipo de motor, dresponda.e 0 a 4. Desplegar en la consola, el
+tipo de bomba que corresponda.
+a) Si el tipo de motor es 0, mostrar un mensaje por consola indicando
+“No hay establecido un valor definido para el tipo de bomba”.
+b) Si el tipo de motor es 1, mostrar un mensaje por consola indicando
+“La bomba es una bomba de agua”.
+c) Si el tipo de motor es 2, mostrar un mensaje por consola indicando
+“La bomba es una bomba de gasolina”.
+d) Si el tipo de motor es 3, mostrar un mensaje por consola indicando
+“La bomba es una bomba de hormigón”.
+e) Si el tipo de motor es 4,mostrar un mensaje por consola indicando
+“La bomba es una bomba de pasta alimenticia”.
+f) Si no se cumple ninguno de los valores anteriores mostrar el mensaje
+“No existe un valor válido para tipo de bomba”.
+
+
+12)import java.util.Scanner;
+
+public class proyect{
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+		
+	
+
+	int motor = 0;
+	
+	
+	Scanner lectura=new Scanner (System.in);
+	System.out.println(" ingrese el tipo de motor ");
+	motor=lectura.nextInt();
+	
+	
+	if(motor==0) {
+		System.out.println("No hay establecido un valor definido para el tipo de bomba");
+	}
+	
+	if(motor==1) {
+		System.out.println("La bomba es una bomba de agua");
+	}
+	
+	
+	if(motor==2) {
+		System.out.println("La bomba es una bomba de gasolina");
+	}
+
+	 
+	 if(motor==3) {
+		 System.out.println("La bomba es una bomba de hormigón");
+	 }
+	
+	 if(motor==4) {
+		 System.out.println("La bomba es una bomba de pasta alimenticia");
+		 
+	 }else if(motor>4) {
+		 System.out.println(" No existe un valor válido para tipo de bomba ");
+	 }
+}
+	
+}

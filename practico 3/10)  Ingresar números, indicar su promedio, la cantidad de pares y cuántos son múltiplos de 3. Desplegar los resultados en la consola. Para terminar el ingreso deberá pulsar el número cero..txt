@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class proyect{
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	int resta=0;	
+	int suma=0;
+    int par=0;
+	int numero=0;
+	int Promedio = 0;
+	int contador = 0;
+	boolean multiplo_3;
+	multiplo_3=false;
+	
+	Scanner lectura=new Scanner (System.in);
+	
+	do {
+		System.out.println(" ingrese un numero: ");
+		numero=lectura.nextInt();
+		
+		
+		contador++;
+		
+		if(numero%2==0) {
+			par++;
+		}
+		
+		if(numero %3==0) {
+			multiplo_3=true;
+		}
+		
+		if(multiplo_3==true) {
+			System.out.println(" si es multiplo de 3 ");
+		}else {
+			System.out.println(" no es multiplo de 3 ");
+		}
+		
+		
+		suma=suma+numero;
+		resta=contador-1;
+		Promedio=suma/contador;
+		
+		
+		
+	}while(numero!=0);
+	System.out.println(" el promedio es:  " +Promedio);
+	System.out.println(" hay un total de pares: " +par);
+	
+
+}
+	
+}

@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class practico3 {
+	
+	
+
+	public static void main(String[] args) {
+		
+		
+		String nombres = null ;
+		String apellidos = null ;
+			
+		
+	 Scanner lectura=new Scanner(System.in);
+	
+	 
+	 
+	 
+	 for(int i=0; i<10; i++) {
+		 System.out.println(" ingrese los nombres  " );
+		 nombres=lectura.next();
+		 System.out.println(" ingrese los apellidos  " );
+		 apellidos=lectura.next();
+	 }
+	
+	 
+	
+	 
+		
+		
+
+	}
+
+}

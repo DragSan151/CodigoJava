@@ -1,0 +1,114 @@
+
+import java.util.Scanner;
+
+public class auxiliar {
+	private static Scanner lectura;
+
+	public static void main (String args []) {
+		
+	
+		int sexo = 0;
+		
+		int Femenino=0;
+		int Hombre=0;
+		int Promedio=0;
+		int sumaedad=0;
+		int sumaPerson=0;
+		
+		
+			Scanner lectura=new Scanner (System.in);
+			
+		
+		
+		
+		
+			
+		
+		
+		
+	
+		for(int i=0; i<20; i++) {
+			System.out.println(" ingrese el sexo de la persona ");
+			sexo=lectura.nextInt();
+			
+			 System.out.println(" ingrese los nombres  " );
+			 String nombres = lectura.next();
+			 
+			 System.out.println(" ingrese la edad  " );
+			 int edad = lectura.nextInt();
+			 
+			 System.out.println(" el nombre es " + nombres);
+			 
+			 System.out.println(" la edad es " + edad);
+			 
+			 
+
+				if(sexo==1) {
+					System.out.println(" Es Femenino");
+					Femenino=Femenino+1;
+					
+					Promedio=sumaedad/Femenino;
+					System.out.println(" El PROMEDIO De la MUJER " +Promedio);
+					 
+					 if (edad>18) {
+							System.out.println(" es mayor de edad ");
+						}
+				}
+				
+				if(sexo==2) {
+					System.out.println(" Es Hombre ");
+					
+					Hombre=Hombre+1;
+					
+					Promedio=sumaedad/Hombre;
+					System.out.println(" El PROMEDIO Del Hombre " +Promedio);
+					
+					if(edad<18) {
+						System.out.println(" es menor de edad ");
+					}
+				}
+				if (edad>=20&edad<=30) {
+					System.out.println(" tiene entre 20 y 30 años " );
+					
+				}
+				
+				if(edad<15) {
+					System.out.println(" son menores a 15 años" );
+				}
+				
+				
+				System.out.println(" hay " + Femenino + " Mujeres ");
+				System.out.println(" hay " + Hombre + " Hombre ");
+				
+				
+				sumaedad=sumaedad+edad;
+				
+				
+				sumaPerson=Hombre+Femenino;
+				
+				
+				
+		 }
+		
+		Promedio=sumaedad/sumaPerson;
+		System.out.println(" el promedio general es: " + Promedio);
+		
+		    
+		
+	}
+	
+	{
+		
+	}
+	
+	}
+		
+		
+		
+			
+		
+		
+
+
+
+
